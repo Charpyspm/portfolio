@@ -61,4 +61,6 @@ export default function App() {
   );
 }
 
+// terminer le header
+// ajouter un footer
 

@@ -11,3 +11,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/*affichage de l'élément actif dans un couleur différente*/
+.active {
+  color: red;
+}
+
+.header {
+  background-color: #293133;
+}

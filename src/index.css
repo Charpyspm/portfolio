@@ -23,13 +23,39 @@ code {
   color: #fff;
 }
 
-/*affichage de l'élément actif dans un couleur différente*/
-.active {
+/*affichage de l'élément actif du header en gras*/
+.header-link.active {
   color: #fff;
   font-weight: bold;
   
 }
 
-.header {
+.header-link:hover {
+  text-decoration: underline !important;
+}
+
+.header, .footer {
   background-color: #293133;
+}
+
+/*style du footer*/
+.col {
+  color: #fff;
+}
+
+.icon {
+  opacity: 0.5;
+}
+
+.icon:hover {
+  opacity: 1;
+  transition: opacity 0.2s;
+}
+
+.footer-link {
+  color: #fff;
+}
+
+.footer-link:hover {
+  font-weight: bold;
 }

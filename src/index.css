@@ -13,9 +13,21 @@ code {
 }
 
 
+/*couleur a l'interieur du header*/
+
+#header-name {
+  color: #fff;
+}
+
+.header-link {
+  color: #fff;
+}
+
 /*affichage de l'élément actif dans un couleur différente*/
 .active {
-  color: red;
+  color: #fff;
+  font-weight: bold;
+  
 }
 
 .header {

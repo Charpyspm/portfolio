@@ -13,35 +13,35 @@ export default function App() {
     <div className="App">
       <div className="header text-left ">
       <nav className='d-flex justify-content-between align-items-center p-3'> 
-        <p className='mb-0'>JOHN DOE</p>
+        <p className='mb-0' id='header-name'>JOHN DOE</p>
         <div className='ms-auto d-flex'>
         <NavLink 
               to="/" 
-              className={({ isActive }) => isActive ? "mx-2 active text-uppercase text-decoration-none" : "mx-2 text-uppercase text-decoration-none"}
+              className={({ isActive }) => isActive ? "mx-2 active text-uppercase text-decoration-underline header-link" : "mx-2 text-uppercase text-decoration-none header-link"}
             >
               home
             </NavLink>
             <NavLink 
               to="/services" 
-              className={({ isActive }) => isActive ? "mx-1 active text-uppercase text-decoration-none" : "mx-1 text-uppercase text-decoration-none"}
+              className={({ isActive }) => isActive ? "mx-1 active text-uppercase text-decoration-underline header-link" : "mx-1 text-uppercase text-decoration-none header-link"}
             >
               services
             </NavLink>
             <NavLink 
               to="/portfolio" 
-              className={({ isActive }) => isActive ? "mx-1 active text-uppercase text-decoration-none" : "mx-1 text-uppercase text-decoration-none"}
+              className={({ isActive }) => isActive ? "mx-1 active text-uppercase text-decoration-underline header-link" : "mx-1 text-uppercase text-decoration-none header-link"}
             >
               portfolio
             </NavLink>
             <NavLink 
               to="/contact" 
-              className={({ isActive }) => isActive ? "mx-1 active text-uppercase text-decoration-none" : "mx-1 text-uppercase text-decoration-none"}
+              className={({ isActive }) => isActive ? "mx-1 active text-uppercase text-decoration-underline header-link" : "mx-1 text-uppercase text-decoration-none header-link"}
             >
               contact
             </NavLink>
             <NavLink 
               to="/mentions" 
-              className={({ isActive }) => isActive ? "mx-1 active text-uppercase text-decoration-none" : "mx-1 text-uppercase text-decoration-none"}
+              className={({ isActive }) => isActive ? "mx-1 active text-uppercase text-decoration-underline header-link" : "mx-1 text-uppercase text-decoration-none header-link"}
             >
               mentions légales
             </NavLink>

@@ -12,6 +12,7 @@ code {
     monospace;
 }
 
+
 /*affichage de l'élément actif dans un couleur différente*/
 .active {
   color: red;

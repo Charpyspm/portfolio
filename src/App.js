@@ -162,5 +162,4 @@ export default function App() {
 }
 
 
-// ajouter un footer
 

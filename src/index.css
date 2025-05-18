@@ -107,7 +107,7 @@ code {
 }
 
 .presentation-text {
-  box-shadow: 0 8px 16px -8px rgba(0,0,0,0.3),
+  box-shadow: 0 8px 16px -8px rgba(0,0,0,0.3),z
               8px 0 16px -8px rgba(0,0,0,0.2),
              -8px 0 16px -8px rgba(0,0,0,0.2);
   height: 90%;

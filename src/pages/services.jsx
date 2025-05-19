@@ -11,7 +11,7 @@ export default function SERVICES() {
       <div>
         <img src={bannerImg} alt="Banner" className='img-fluid'/>
       </div>
-      <div className='services'>
+      <div>
         <h2 className='text-center mt-5'>Mon offre de services</h2>
         <p className='text-center presta'>Voici les préstations sur lesquelles je peut intervenir</p>
         <hr className='separation bg-primary w-25 mx-auto'/>

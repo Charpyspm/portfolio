@@ -128,3 +128,24 @@ code {
   width: 100%;
   height: auto;
 }
+
+/*défignotion de la taille de la police pour le texte sous le titre h2 sur la page service*/
+.presta {
+  font-size: 0.8rem;
+}
+
+/*style des cards services*/
+
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+
+}
+
+.card:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08), 0 1.5px 4px rgba(0,0,0,0.10);
+  background-color: #efefef;
+}

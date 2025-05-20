@@ -1,13 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import johnDoeImg from '../images/john-doe-about.jpg';
 
 export default function HOME() {
+
+  const [showModal, setShowModal] = useState(false);
+
   return (
     <>
       <div className="home d-flex flex-column justify-content-center align-items-center presentation">
         <h1 className='text-center'>Bonjour, je suis John DOE</h1>
         <h2 className='text-center'>Développeur web full stack</h2>
-        <button className='btn btn-danger mt-3'>En savoir plus</button>
+        <button 
+          className='btn btn-danger mt-3'
+          onClick={() => setShowModal(true)}
+        >
+          En savoir plus
+        </button>
       </div>
       <div className='section-presentation'>
         <div className='presentation-text row'>
@@ -88,6 +96,27 @@ export default function HOME() {
           </div>
         </div>
       </div>
+      {showModal && (
+        <div className="modal fade show d-block" tabIndex="-1" style={{background: "rgba(0,0,0,0.5)"}}>
+          <div className="modal-dialog modal-dialog-centered">
+            <div className="modal-content">
+              <div className="modal-header">
+                <h5 className="modal-title">Mon profil GitHub</h5>
+                <button type="button" className="btn-close" onClick={() => setShowModal(false)}></button>
+              </div>
+              <div className="modal-body">
+                <div className='profil-github'></div>
+                <div className='text-profil-github'></div>
+              </div>
+              <div className="modal-footer">
+                <button type="button" className="btn btn-secondary" onClick={() => setShowModal(false)}>
+                  Fermer
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </>
   );
   

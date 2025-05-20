@@ -129,6 +129,18 @@ code {
   height: auto;
 }
 
+/*style de la modale*/
+
+.modal-content {
+  background-color: rgb(28, 32, 37) !important;
+  color: #fff !important;
+}
+
+.btn-close {
+  color: #fff !important;
+}
+
+
 /*défignotion de la taille de la police pour le texte sous le titre h2 sur la page service*/
 .presta {
   font-size: 0.8rem;
@@ -187,3 +199,4 @@ code {
   color: #fff;
   transition: background-color 0.2s, border-color 0.2s;
 }
+

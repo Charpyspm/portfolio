@@ -12,6 +12,16 @@ code {
     monospace;
 }
 
+/*responsive sur la modale*/
+
+@media (max-width: 570px) {
+  .modal-body-flex {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 1rem !important;
+  }
+}
+
 
 /*couleur a l'interieur du header*/
 

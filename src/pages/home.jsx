@@ -115,7 +115,7 @@ export default function HOME() {
               </div>
               <div className="modal-body">
                 {githubData ? (
-                  <div className='modal-body-flex' style={{ display: "flex", alignItems: "center", gap: "2rem" }}>>
+                  <div className='modal-body-flex' style={{ display: "flex", alignItems: "center", gap: "2rem" }}>
                     <div className='profil-github'>
                       <img src={githubData.avatar_url} alt='avatar' style={{width: 300}}/>
                     </div>

@@ -168,3 +168,22 @@ code {
   text-align: center;
   color: #000;
 }
+
+.description {
+  font-size: 0.6rem;
+  text-align: center;
+  color: #000;
+}
+
+.portfolio-title {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #000;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+  background-color: #4da3ff !important; /* bleu plus clair */
+  border-color: #4da3ff !important;
+  color: #fff;
+  transition: background-color 0.2s, border-color 0.2s;
+}

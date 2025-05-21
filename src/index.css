@@ -119,14 +119,13 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 70vh;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 .presentation-text {
-  box-shadow: 0 8px 16px -8px rgba(0,0,0,0.3),z
-              8px 0 16px -8px rgba(0,0,0,0.2),
-             -8px 0 16px -8px rgba(0,0,0,0.2);
-  height: 90%;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08), 0 1.5px 4px rgba(0,0,0,0.10);
+  height: auto;
   width: 70%;
   display: flex;
   padding-top: 2rem;
@@ -209,11 +208,10 @@ h1, h2, h3, h4, h5, h6 {
   color: #000;
 }
 
-.btn-primary:hover, .btn-primary:focus {
-  background-color: #4da3ff !important; /* bleu plus clair */
-  border-color: #4da3ff !important;
-  color: #fff;
-  transition: background-color 0.2s, border-color 0.2s;
+.btn-primary:hover {
+  filter: brightness(1.6);
+  transition: 0.2s;
+  
 }
 
 /*style page contact*/
@@ -252,3 +250,84 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0.3rem;
   margin-top: 0.3rem;
 }
+
+/*assombrissement des boutons au survol*/
+
+.btn-danger:hover, .btn-sombre:hover {
+  filter: brightness(0.8);
+  transition: 0.2s;
+}
+
+/*gestion de l'app version mobile*/
+/* style menu burger */
+.burger-btn {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: none;
+  padding: 0.5rem;
+}
+.burger-icon {
+  display: block;
+  width: 28px;
+  height: 3px;
+  background: #222;
+  position: relative;
+}
+.burger-icon::before,
+.burger-icon::after {
+  content: '';
+  display: block;
+  width: 28px;
+  height: 3px;
+  background: #222;
+  position: absolute;
+  left: 0;
+  transition: 0.3s;
+}
+.burger-icon::before {
+  top: -8px;
+}
+.burger-icon::after {
+  top: 8px;
+}
+
+/* Navigation responsive */
+@media (max-width: 570px) {
+  .nav-burger {
+    display: none !important;
+    width: 100%;
+    flex-direction: column;
+    background: #293133;
+    position: absolute;
+    top: 55px;
+    left: 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    z-index: 2;
+    padding: 1rem;
+  }
+  .nav-burger.open {
+    display: flex !important;
+  }
+  .burger-btn {
+    display: block;;
+  }
+
+  .presentation::before {
+    background-position: center;;
+  }
+
+  .prepa {
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 80% !important;
+    gap: 1rem !important;
+  }
+
+  .formulaire, .coordonnees {
+    width: 100% !important;
+  }
+}
+

@@ -216,10 +216,10 @@ h1, h2, h3, h4, h5, h6 {
   transition: background-color 0.2s, border-color 0.2s;
 }
 
-/*preparation formulaire de contact*/
+/*style page contact*/
 
 .prepa {
-  border: 1px dashed black;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08), 0 1.5px 4px rgba(0,0,0,0.10);
   display: flex;
   width: 70%;
   margin: 0 auto;
@@ -227,4 +227,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .formulaire, .coordonnees {
   width: 50%;
+}
+
+.coordonnees p {
+  margin-bottom: 0.3rem;
+  margin-top: 0.3rem;
 }

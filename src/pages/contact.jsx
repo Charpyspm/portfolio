@@ -29,7 +29,7 @@ export default function CONTACT() {
               <textarea className="form-control" id="message" placeholder='Votre message' rows="15" required></textarea>
             </div>
             <div className="d-flex justify-content-center">
-              <button type="submit" className="btn btn-primary mb-5">Envoyer</button>
+              <button type="submit" className="btn btn-primary btn-sombre mb-5">Envoyer</button>
             </div>
           </form>
         </div>

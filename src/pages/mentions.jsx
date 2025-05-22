@@ -16,7 +16,7 @@ export default function MENTIONS() {
         <div className="accordion accordion-w" id="monAccordion">
           <div className="accordion-item">
             <h2 className="accordion-header" id="headingOne">
-            <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+            <button className="accordion-button show" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true">
               Editeur du site
             </button>
             </h2>
@@ -44,7 +44,7 @@ export default function MENTIONS() {
           </div>
           <div className="accordion-item">
             <h2 className="accordion-header" id="headingTwo">
-            <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+            <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false">
               Hébergeur
             </button>
             </h2>
@@ -61,7 +61,7 @@ export default function MENTIONS() {
           </div>
           <div className="accordion-item">
             <h2 className="accordion-header" id="headingThree">
-            <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+            <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false">
               Crédits
             </button>
             </h2>
